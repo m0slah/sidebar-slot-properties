@@ -1,6 +1,10 @@
 <template>
-  <HelloWorld v-slot="v">
-    <p>Hello {{ v.user.name }}</p>
+  <HelloWorld #default="{ user, favotites }">
+    <p>Hello {{ user.name }}</p>
+
+    <ul>
+      <li>{{ favotites }}</li>
+    </ul>
   </HelloWorld>
 </template>
 
