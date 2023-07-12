@@ -1,6 +1,6 @@
 <template>
-  <HelloWorld>
-    hel dd
+  <HelloWorld v-slot="v">
+    <p>Hello {{ v.user.name }}</p>
   </HelloWorld>
 </template>
 
